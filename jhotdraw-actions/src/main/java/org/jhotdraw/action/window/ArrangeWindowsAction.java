@@ -10,9 +10,6 @@ package org.jhotdraw.action.window;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import org.jhotdraw.api.gui.Arrangeable;
-import static org.jhotdraw.api.gui.Arrangeable.Arrangement.CASCADE;
-import static org.jhotdraw.api.gui.Arrangeable.Arrangement.HORIZONTAL;
-import static org.jhotdraw.api.gui.Arrangeable.Arrangement.VERTICAL;
 import org.jhotdraw.util.ResourceBundleUtil;
 
 /**
@@ -33,8 +30,8 @@ public class ArrangeWindowsAction extends AbstractAction {
     public static final String VERTICAL_ID = "window.arrangeVertical";
     public static final String HORIZONTAL_ID = "window.arrangeHorizontal";
     public static final String CASCADE_ID = "window.arrangeCascade";
-    private Arrangeable arrangeable;
-    private Arrangeable.Arrangement arrangement;
+    private transient Arrangeable arrangeable;
+    private final Arrangeable.Arrangement arrangement;
 
     /**
      * Creates a new instance.
@@ -63,4 +60,6 @@ public class ArrangeWindowsAction extends AbstractAction {
     public void actionPerformed(ActionEvent e) {
         arrangeable.setArrangement(arrangement);
     }
+
+
 }

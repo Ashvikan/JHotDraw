@@ -301,7 +301,6 @@ public class MDIApplication extends AbstractApplication {
                 }
             } while (moved);
             f.setLocation(loc);
-            //paletteHandler.add(f, v);
             f.addInternalFrameListener(new InternalFrameAdapter() {
                 @Override
                 public void internalFrameClosing(final InternalFrameEvent evt) {
@@ -340,7 +339,6 @@ public class MDIApplication extends AbstractApplication {
                     }
                 }
             });
-            //f.setJMenuBar(createMenuBar(v));
             f.getContentPane().add(v.getComponent());
             f.setVisible(true);
             desktopPane.add(f);

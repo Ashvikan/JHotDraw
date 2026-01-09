@@ -46,7 +46,7 @@ public abstract class AbstractCompositeFigure
      * A Layouter determines how the children of the CompositeFigure
      * are laid out graphically.
      */
-    protected Layouter layouter;
+    protected transient Layouter layouter;
     /**
      * The children that this figure is composed of
      *
@@ -297,7 +297,7 @@ public abstract class AbstractCompositeFigure
             f.transform(tx);
         }
         invalidate();
-        //invalidate();
+
     }
 
     @Override
@@ -331,7 +331,7 @@ public abstract class AbstractCompositeFigure
      * Z-order front to back over the children.
      */
     public java.util.List<Figure> getChildrenFrontToBack() {
-        return children.size() == 0 ? new LinkedList<>() : new ReversedList<>(getChildren());
+        return children.isEmpty() ? new LinkedList<>() : new ReversedList<>(getChildren());
     }
 
     @Override

@@ -1,0 +1,92 @@
+{
+  "className": "org.jhotdraw.draw.figure.BringToFrontBDDTest",
+  "name": "Bring To Front BDD",
+  "scenarios": [
+    {
+      "className": "org.jhotdraw.draw.figure.BringToFrontBDDTest",
+      "testMethodName": "bring_selected_figure_to_front",
+      "description": "bring selected figure to front",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a drawing with multiple figures",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a drawing with multiple figures"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 623584584,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "a selected figure",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a selected figure"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 46958,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "the selected figure is brought to front",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the selected figure is brought to front"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 6837041,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "the figure is on top",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the figure is on top"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 23425500,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 667906916
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 667906916
+    }
+  ],
+  "tagMap": {}
+}
